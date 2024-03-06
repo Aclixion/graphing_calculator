@@ -57,3 +57,10 @@ function drawHorizontalGridLines(gridHeight) {
         y += gridHeight;
     }
 }
+
+// Draws grids
+function drawGrids(gridWidth, gridHeight) {
+    clearCanvas();
+    drawHorizontalGridLines(gridHeight);
+    drawVerticalGridLines(gridWidth);
+}
