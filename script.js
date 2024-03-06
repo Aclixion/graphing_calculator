@@ -16,7 +16,7 @@ function drawVerticalGridLines(gridWidth) {
     let x = 0;
 
     // Draws y-axis
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 3;
     ctx.beginPath();
     ctx.moveTo(canvasWidth / 2, 0);
     ctx.lineTo(canvasWidth / 2, canvasHeight);
@@ -50,7 +50,7 @@ function drawHorizontalGridLines(gridHeight) {
     let y = 0;
 
     // Draws x-axis
-    ctx.lineWidth = 5;
+    ctx.lineWidth = 3;
     ctx.beginPath();
     ctx.moveTo(0, canvasHeight / 2);
     ctx.lineTo(canvasWidth, canvasHeight / 2);
