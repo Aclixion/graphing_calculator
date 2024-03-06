@@ -5,6 +5,11 @@ const ctx = canvas.getContext("2d"); // Canvas context
 const canvasWidth = Number(canvas.width); // Width of canvas
 const canvasHeight = Number(canvas.height); // Height of canvas
 
+// Clears canvas
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+}
+
 // Draws vertical grid lines
 function drawVerticalGridLines(gridWidth) {
     // Distance from y-axis
