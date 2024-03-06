@@ -22,7 +22,7 @@ function drawVerticalGridLines(gridWidth) {
     ctx.lineTo(canvasWidth / 2, canvasHeight);
     ctx.stroke();
 
-    // Change line width back to 1
+    // Changes line width back to 1
     ctx.lineWidth = 1;
 
     // Draws lines
