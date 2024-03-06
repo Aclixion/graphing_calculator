@@ -28,3 +28,27 @@ function drawVerticalGridLines(gridWidth) {
         x += gridWidth;
     }
 }
+
+// Draws horizontal grid lines
+function drawHorizontalGridLines(gridHeight) {
+    // Distance from x-axis
+    let y = 0;
+
+    // Draws lines
+    while (y < height) {
+        // Draws line above the x-axis
+        ctx.beginPath();
+        ctx.moveTo(0, height / 2 + y);
+        ctx.lineTo(width, height / 2 + y);
+        ctx.stroke();
+
+        // Draws line below the x-axis
+        ctx.beginPath();
+        ctx.moveTo(0, height / 2 - y);
+        ctx.lineTo(width, height / 2 - y);
+        ctx.stroke();
+
+        // Increases distance from x-axis
+        y += gridHeight;
+    }
+}
