@@ -24,7 +24,7 @@ function drawVerticalGridLines(gridWidth) {
         ctx.lineTo(width / 2 - x, height);
         ctx.stroke();
         
-        // Increases distance between lines and y-axis
+        // Increases distance from y-axis
         x += gridWidth;
     }
 }
