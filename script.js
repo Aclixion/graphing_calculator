@@ -49,6 +49,16 @@ function drawHorizontalGridLines(gridHeight) {
     // Distance from x-axis
     let y = 0;
 
+    // Draws x-axis
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(0, canvasHeight / 2);
+    ctx.lineTo(canvasWidth, canvasHeight / 2);
+    ctx.stroke();
+
+    // Changes line width back to 1
+    ctx.lineWidth = 1;
+
     // Draws lines
     while (y < canvasHeight) {
         // Draws line above the x-axis
