@@ -15,6 +15,16 @@ function drawVerticalGridLines(gridWidth) {
     // Distance from y-axis
     let x = 0;
 
+    // Draws y-axis
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(canvasWidth / 2, 0);
+    ctx.lineTo(canvasWidth / 2, canvasHeight);
+    ctx.stroke();
+
+    // Change line width back to 1
+    ctx.lineWidth = 1;
+
     // Draws lines
     while (x < canvasWidth) {
         // Draws line to the right of the y-axis
