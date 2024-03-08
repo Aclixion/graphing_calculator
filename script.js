@@ -1,6 +1,7 @@
 const canvas = document.querySelector("canvas"); // Canvas
 const scaleInput = document.querySelector(".scale-slider"); // Slider for scaling
 const equationInput = document.querySelector(".equation-input"); // Equation input
+const errorMessage = document.querySelector(".error-message"); // Error message
 const ctx = canvas.getContext("2d"); // Canvas context
 
 const canvasWidth = Number(canvas.width); // Width of canvas
